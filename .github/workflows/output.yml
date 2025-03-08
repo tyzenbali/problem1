@@ -1,0 +1,10 @@
+---
+    name: Output information
+    on: issues
+    jobs:
+        info:
+            runs-on: ubuntu-test
+            steps:
+                - name: Output Github Context
+                  run: echo "${{toJSON(github)}}"
+    
